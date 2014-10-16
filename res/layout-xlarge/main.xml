@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="30dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="@string/tituloAplicacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/bJugar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arrancar" />
+
+    <Button
+        android:id="@+id/bConfig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/configuraciones" />
+
+    <Button
+        android:id="@+id/bAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acercaDe" />
+
+    <Button
+        android:id="@+id/bSalir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salir" />
+
+</LinearLayout>
