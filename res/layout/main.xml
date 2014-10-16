@@ -7,35 +7,25 @@
     android:orientation="vertical" >
 
     <TextView
-        android:text="@string/tituloAplicacion"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:layout_marginBottom="20dp" />
+        style="@style/tituloAplicacion" />
 
     <Button
+        style="@style/tituloAplicacion.Botones"
         android:id="@+id/bJugar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="@string/arrancar" />
 
     <Button
+        style="@style/tituloAplicacion.Botones"
         android:id="@+id/bConfig"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="@string/configuraciones" />
 
     <Button
+        style="@style/tituloAplicacion.Botones"
         android:id="@+id/bAbout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="@string/acercaDe" />
 
     <Button
-        android:id="@+id/bSalir"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/tituloAplicacion.Botones"
         android:text="@string/salir" />
 
 </LinearLayout>
