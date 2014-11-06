@@ -1,18 +1,19 @@
 package com.example.asteroides;
 
-import com.example.asteroides.R;
-
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-//import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+	public static AlmacenPuntuacionesArray almacen = new AlmacenPuntuacionesArray();
 	Button about;
 	
 	@Override
@@ -29,6 +30,11 @@ public class MainActivity extends Activity {
 	
 	public void lanzarPreferencias(View view){
 		Intent pref = new Intent(this, Preferencias.class);
+		startActivity(pref);
+	}
+	
+	public void lanzarPuntuaciones(View view){
+		Intent pref = new Intent(this, Puntuaciones.class);
 		startActivity(pref);
 	}
 	
@@ -59,9 +65,23 @@ public class MainActivity extends Activity {
 		case R.id.bConfig:
 			lanzarPreferencias(null);
 			break;
+		//case R.id.bJugar:
+			
 		}
+		
 		
 		return true; 
 	} //termina metodos para crear menú
+	
+	public void mostrarPreferencias(View view){
+		
+		//crea un objeto sharedpreferences con los valores por defecto
+		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+		
+		String s = "música " + pref.getBoolean("musica", true) +
+				", gráficos: " + pref.getString("graficos", "?");
+		Toast.makeText(this, s, Toast.LENGTH_SHORT).show(); //Visualia el resultado del string s
+		
+	}
 	
 }

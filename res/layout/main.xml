@@ -12,6 +12,7 @@
     <Button
         style="@style/tituloAplicacion.Botones"
         android:id="@+id/bJugar"
+        android:onClick="mostrarPreferencias"
         android:text="@string/arrancar" />
 
     <Button
@@ -28,7 +29,9 @@
         android:text="@string/acercaDe" />
 	
     <Button 
+        android:id="@+id/bPuntua"
         style="@style/tituloAplicacion.Botones"
+        android:onClick="lanzarPuntuaciones"
         android:text="@string/puntuaciones"/>
     
     <Button
