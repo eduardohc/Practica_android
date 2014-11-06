@@ -32,5 +32,22 @@
         <item name="android:padding">4dp</item>
     </style>
     
+    <style name="MiTema"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="TemaAsteroides" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="TemaAsteroides.NoTitulo"
+        parent="@android:style/Theme.NoTitleBar.Fullscreen">
+    </style>
 
 </resources>

@@ -9,6 +9,7 @@
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:theme="@style/TemaAsteroides"
         android:text="Asteroides es una aplicacion basada en el juego de asteroides que se creo como ejemplo en el libro 'El gran libro de android' y que se fue desarrollando conforme pasaban los temas que se imparten en el instructivo" />
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:gravity="center"
     android:padding="30dip"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         style="@style/tituloAplicacion" />
@@ -15,17 +15,25 @@
         android:text="@string/arrancar" />
 
     <Button
-        style="@style/tituloAplicacion.Botones"
         android:id="@+id/bConfig"
+        style="@style/tituloAplicacion.Botones"
+        android:onClick="lanzarPreferencias"
         android:text="@string/configuraciones" />
 
     <Button
-        style="@style/tituloAplicacion.Botones"
         android:id="@+id/bAbout"
+        style="@style/tituloAplicacion.Botones"
+        android:onClick="lanzarAcercaDe"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:text="@string/acercaDe" />
-
+	
+    <Button 
+        style="@style/tituloAplicacion.Botones"
+        android:text="@string/puntuaciones"/>
+    
     <Button
         style="@style/tituloAplicacion.Botones"
+        android:onClick="lanzarSalir"
         android:text="@string/salir" />
 
 </LinearLayout>
