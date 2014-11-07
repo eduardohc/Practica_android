@@ -11,7 +11,7 @@ public class AlmacenPuntuacionesArray implements AlmacenPuntuaciones{
 		puntuaciones = new Vector<String>(); //crea el objeto vector con valores string
 		puntuaciones.add("12300 Eduardo Hernandez");
 		puntuaciones.add("7753 Marco Mejia");
-		puntuaciones.add("3,400 Mildred Alpirez");
+		puntuaciones.add("3400 Mildred Alpirez");
 	}
 
 	@Override
