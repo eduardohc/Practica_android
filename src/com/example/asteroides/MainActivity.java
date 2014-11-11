@@ -23,6 +23,11 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main);
 	}
 	
+	public void lanzarJuego(View view){
+		Intent acercaDe = new Intent(this, Juego.class);
+		startActivity(acercaDe);
+	}
+	
 	public void lanzarAcercaDe(View view){
 		Intent acercaDe = new Intent(this, AcercaDe.class);
 		startActivity(acercaDe);

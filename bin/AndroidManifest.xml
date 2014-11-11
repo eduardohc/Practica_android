@@ -42,6 +42,12 @@
         
     </activity>
     
+    <activity 
+        android:name=".Juego" 
+        android:label="Juego" android:screenOrientation="landscape">
+        
+    </activity>
+    
     
     </application>
     

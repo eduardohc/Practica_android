@@ -12,7 +12,7 @@
     <Button
         style="@style/tituloAplicacion.Botones"
         android:id="@+id/bJugar"
-        android:onClick="mostrarPreferencias"
+        android:onClick="lanzarJuego"
         android:text="@string/arrancar" />
 
     <Button
